@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Clothing Suggester</string>
+    <string name="hi">Hi!👋</string>
+    <string name="humidity">Humidity</string>
+    <string name="uv_index">UV index</string>
+    <string name="wind">Wind</string>
+    <string name="outfit_recommendation">Depending on the weather today, we recommend you wear this outfit</string>
+    <string name="max_temperature">Max Degree</string>
+    <string name="today">Today</string>
+    <string name="city_name">Assiut, Egypt</string>
+    <string name="temperature_degree">22</string>
+</resources>

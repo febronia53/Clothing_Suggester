@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="text_giant">36sp</dimen>
+    <dimen name="text_large">24sp</dimen>
+    <dimen name="text_medium">20sp</dimen>
+    <dimen name="text_card_item">14sp</dimen>
+    <dimen name="text_card_item_title">18sp</dimen>
+
+    <dimen name="margin_large">16dp</dimen>
+    <dimen name="margin_meduim">8dp</dimen>
+    <dimen name="margin_small">4dp</dimen>
+
+    <dimen name="radius_medium">16dp</dimen>
+    <dimen name="icon_width">150dp</dimen>
+    <dimen name="icon_height">90dp</dimen>
+    <dimen name="width_card">98dp</dimen>
+    <dimen name="height_card">91dp</dimen>
+
+</resources>
