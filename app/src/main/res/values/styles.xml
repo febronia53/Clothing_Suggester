@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--text -->
+    <style name="Text" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!-- title Hello -->
+    <style name="Text.Title">
+        <item name="android:fontFamily">@font/opensans_semibold</item>
+        <item name="android:textColor">@color/black_87</item>
+        <item name="android:layout_marginTop">@dimen/margin_large</item>
+    </style>
+
+    <!-- title city -->
+    <style name="Text.CityTitle">
+        <item name="android:fontFamily">@font/opensans_medium</item>
+        <item name="android:textColor">@color/black_87</item>
+        <item name="android:layout_marginTop">@dimen/margin_meduim</item>
+        <item name="drawableEndCompat">@drawable/ic_location</item>
+        <item name="android:drawablePadding">@dimen/margin_small</item>
+    </style>
+
+    <!-- Text Temperature -->
+    <style name="Text.Temperature">
+        <item name="android:fontFamily">@font/opensans_medium</item>
+        <item name="android:textColor">@color/black_87</item>
+        <item name="android:layout_marginTop">@dimen/margin_meduim</item>
+    </style>
+
+    <!-- Text Card items -->
+    <style name="Text.CardItems">
+        <item name="android:fontFamily">@font/opensans_regular</item>
+        <item name="android:textColor">@color/black_60</item>
+        <item name="android:layout_marginTop">@dimen/margin_small</item>
+    </style>
+
+    <!-- Text recommendation outfit -->
+    <style name="Text.Recommendation">
+        <item name="android:fontFamily">@font/opensans_medium</item>
+        <item name="android:textColor">@color/black_60</item>
+        <item name="android:paddingVertical">@dimen/margin_small</item>
+        <item name="android:paddingHorizontal">@dimen/margin_meduim</item>
+        <item name="android:layout_marginTop">@dimen/margin_large</item>
+        <item name="android:layout_marginBottom">@dimen/margin_meduim</item>
+
+    </style>
+
+
+    <!-- Image Outfit -->
+    <style name="ImageOutfit">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">@dimen/radius_medium</item>
+
+    </style>
+</resources>

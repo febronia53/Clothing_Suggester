@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_38"
+    android:padding="@dimen/margin_large"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text_hello"
+        style="@style/Text.Title"
+        android:text="@string/hi"
+        android:textSize="@dimen/text_large"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_city_name"
+        style="@style/Text.CityTitle"
+        android:textSize="@dimen/text_medium"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_hello"
+        tools:text="@string/city_name" />
+
+    <TextView
+        android:id="@+id/text_temperature"
+        style="@style/Text.Temperature"
+        android:textSize="@dimen/text_giant"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_city_name"
+        tools:text="@string/temperature_degree" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_meduim"
+        android:src="@drawable/celsius"
+        app:layout_constraintStart_toEndOf="@+id/text_temperature"
+        app:layout_constraintTop_toTopOf="@+id/text_temperature" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="@dimen/icon_width"
+        android:layout_height="@dimen/icon_height"
+        android:layout_marginBottom="@dimen/margin_large"
+        android:src="@drawable/cloudy"
+        app:layout_constraintBottom_toTopOf="@+id/card_max_degree"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/text_city_name" />
+
+    <View
+        android:id="@+id/card_humidity"
+        android:layout_width="@dimen/width_card"
+        android:layout_height="@dimen/height_card"
+        android:layout_marginTop="@dimen/margin_large"
+        android:background="@drawable/small_card"
+        app:layout_constraintEnd_toStartOf="@+id/card_max_degree"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_temperature" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/image_humidity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_small"
+        android:src="@drawable/ic_humidity"
+        app:layout_constraintEnd_toEndOf="@id/card_humidity"
+        app:layout_constraintStart_toStartOf="@id/card_humidity"
+        app:layout_constraintTop_toTopOf="@id/card_humidity" />
+
+    <TextView
+        android:id="@+id/text_humidity"
+        style="@style/Text.CardItems"
+        android:text="@string/humidity"
+        android:textSize="@dimen/text_card_item"
+        app:layout_constraintEnd_toEndOf="@id/card_humidity"
+        app:layout_constraintStart_toStartOf="@id/card_humidity"
+        app:layout_constraintTop_toBottomOf="@id/image_humidity" />
+
+    <TextView
+        android:id="@+id/text_humidity_value"
+        style="@style/Text.CardItems"
+        app:layout_constraintEnd_toEndOf="@id/text_humidity"
+        app:layout_constraintStart_toStartOf="@id/text_humidity"
+        app:layout_constraintTop_toBottomOf="@id/text_humidity"
+        tools:text="60%" />
+
+    <View
+        android:id="@+id/card_max_degree"
+        android:layout_width="@dimen/width_card"
+        android:layout_height="@dimen/height_card"
+        android:layout_marginStart="@dimen/margin_small"
+        android:background="@drawable/small_card"
+        app:layout_constraintBottom_toBottomOf="@id/card_humidity"
+        app:layout_constraintEnd_toStartOf="@+id/card_wind"
+        app:layout_constraintStart_toEndOf="@id/card_humidity"
+        app:layout_constraintTop_toTopOf="@id/card_humidity" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/image_max_degree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_small"
+        android:src="@drawable/ic_uvindex"
+        app:layout_constraintEnd_toEndOf="@id/card_max_degree"
+        app:layout_constraintStart_toStartOf="@id/card_max_degree"
+        app:layout_constraintTop_toTopOf="@id/card_max_degree" />
+
+    <TextView
+        android:id="@+id/text_max_temperature"
+        style="@style/Text.CardItems"
+        android:text="@string/max_temperature"
+        android:textSize="@dimen/text_card_item"
+        app:layout_constraintEnd_toEndOf="@id/image_max_degree"
+        app:layout_constraintStart_toStartOf="@id/image_max_degree"
+        app:layout_constraintTop_toBottomOf="@id/image_max_degree" />
+
+    <TextView
+        android:id="@+id/text_max_temperature_value"
+        style="@style/Text.CardItems"
+        android:textSize="@dimen/text_card_item"
+        app:layout_constraintEnd_toEndOf="@id/text_max_temperature"
+        app:layout_constraintStart_toStartOf="@id/text_max_temperature"
+        app:layout_constraintTop_toBottomOf="@id/text_max_temperature"
+        tools:text="45" />
+
+    <View
+        android:id="@+id/card_wind"
+        android:layout_width="@dimen/width_card"
+        android:layout_height="@dimen/height_card"
+        android:layout_marginStart="@dimen/margin_small"
+        android:background="@drawable/small_card"
+        app:layout_constraintBottom_toBottomOf="@id/card_max_degree"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/card_max_degree"
+        app:layout_constraintTop_toTopOf="@id/card_max_degree" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/image_wind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_small"
+        android:src="@drawable/ic_wind"
+        app:layout_constraintEnd_toEndOf="@id/card_wind"
+        app:layout_constraintStart_toStartOf="@id/card_wind"
+        app:layout_constraintTop_toTopOf="@id/card_wind" />
+
+    <TextView
+        android:id="@+id/text_wind"
+        style="@style/Text.CardItems"
+        android:text="@string/wind"
+        android:textSize="@dimen/text_card_item"
+        app:layout_constraintEnd_toEndOf="@id/image_wind"
+        app:layout_constraintStart_toStartOf="@id/image_wind"
+        app:layout_constraintTop_toBottomOf="@id/image_wind" />
+
+    <TextView
+        android:id="@+id/text_wind_value"
+        style="@style/Text.CardItems"
+        android:textSize="@dimen/text_card_item"
+        app:layout_constraintEnd_toEndOf="@id/text_wind"
+        app:layout_constraintStart_toStartOf="@id/text_wind"
+        app:layout_constraintTop_toBottomOf="@id/text_wind"
+        tools:text="28 km/h" />
+
+    <TextView
+        android:id="@+id/text_recommendation"
+        style="@style/Text.Recommendation"
+        android:background="@drawable/large_card"
+        android:text="@string/outfit_recommendation"
+        android:textSize="@dimen/text_card_item_title"
+        app:layout_constraintBottom_toTopOf="@+id/image_clothes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/card_max_degree" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/image_clothes"
+        android:layout_width="match_parent"
+        android:layout_height="355dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_recommendation"
+        app:shapeAppearance="@style/ImageOutfit"
+        tools:src="@drawable/spring6" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
