@@ -27,10 +27,10 @@
     <TextView
         android:id="@+id/text_today"
         style="@style/Text.day"
+        android:text="@string/today"
         android:textSize="@dimen/text_32"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/text_city_name"
-        android:text="@string/today" />
+        app:layout_constraintTop_toBottomOf="@id/text_city_name" />
 
     <TextView
         android:id="@+id/text_temperature"
