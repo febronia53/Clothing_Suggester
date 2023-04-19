@@ -29,6 +29,12 @@
         <item name="android:layout_marginTop">@dimen/margin_meduim</item>
     </style>
 
+    <!-- Text day -->
+    <style name="Text.day">
+        <item name="android:fontFamily">@font/opensans_medium</item>
+        <item name="android:textColor">@color/black_87</item>
+        <item name="android:layout_marginTop">@dimen/margin_meduim</item>
+    </style>
     <!-- Text Card items -->
     <style name="Text.CardItems">
         <item name="android:fontFamily">@font/opensans_regular</item>
@@ -39,7 +45,7 @@
     <!-- Text recommendation outfit -->
     <style name="Text.Recommendation">
         <item name="android:fontFamily">@font/opensans_medium</item>
-        <item name="android:textColor">@color/black_60</item>
+        <item name="android:textColor">@color/black_87</item>
         <item name="android:paddingVertical">@dimen/margin_small</item>
         <item name="android:paddingHorizontal">@dimen/margin_meduim</item>
         <item name="android:layout_marginTop">@dimen/margin_large</item>
