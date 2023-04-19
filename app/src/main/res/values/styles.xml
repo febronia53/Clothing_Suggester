@@ -27,6 +27,7 @@
         <item name="android:fontFamily">@font/opensans_medium</item>
         <item name="android:textColor">@color/black_87</item>
         <item name="android:layout_marginTop">@dimen/margin_meduim</item>
+        <item name="android:layout_marginStart">@dimen/margin_meduim</item>
     </style>
 
     <!-- Text day -->
