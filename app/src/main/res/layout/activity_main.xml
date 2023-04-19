@@ -25,10 +25,18 @@
         tools:text="@string/city_name" />
 
     <TextView
+        android:id="@+id/text_today"
+        style="@style/Text.day"
+        android:textSize="@dimen/text_32"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_city_name"
+        android:text="@string/today" />
+
+    <TextView
         android:id="@+id/text_temperature"
         style="@style/Text.Temperature"
         android:textSize="@dimen/text_giant"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@id/text_today"
         app:layout_constraintTop_toBottomOf="@id/text_city_name"
         tools:text="@string/temperature_degree" />
 
